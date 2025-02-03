@@ -1,4 +1,5 @@
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 int main(){
@@ -28,16 +29,17 @@ int main(){
 		}
 	}
 	
-	cout << "\t";
+	cout << "\n";
+	cout << setw(6) << " "; 
 	for(int i=0; i < nB; i++){
-		cout << B[i] << "\t";
+		cout << setw(5) << B[i] << " ";
 	}
 	cout << "\n-----------------------------\n";
 	
 	for(int i=0; i < nA; i++){
-		cout << A[i] << "\t";
+		cout << setw(5) << A[i] << " ";
 		for(int j=0; j < nB; j++) {
-			cout << C[i][j] << "\t";
+			cout << setw(5) << C[i][j] << " ";
 		}
 		cout << "\n";
 	}
